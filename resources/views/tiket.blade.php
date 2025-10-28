@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+            background: linear-gradient(135deg, #2196f3, #64b5f6); /* biru */
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -41,13 +41,13 @@
         }
 
         h2 {
-            color: #1b5e20;
+            color: #0d47a1;
             font-weight: 700;
             margin-bottom: 10px;
         }
 
         h4 {
-            color: #2e7d32;
+            color: #1565c0;
             font-weight: 600;
             margin-bottom: 20px;
         }
@@ -55,7 +55,7 @@
         .price {
             font-size: 1.6rem;
             font-weight: 700;
-            color: #2e7d32;
+            color: #0d47a1;
             margin-bottom: 15px;
         }
 
@@ -68,13 +68,13 @@
 
         .facilities li {
             list-style: none;
-            color: #33691e;
+            color: #1976d2;
             font-weight: 500;
             margin: 5px 0;
         }
 
         .btn-back {
-            background-color: #66bb6a;
+            background-color: #1e88e5;
             color: white;
             font-weight: 600;
             border-radius: 25px;
@@ -84,14 +84,14 @@
         }
 
         .btn-back:hover {
-            background-color: #388e3c;
+            background-color: #1565c0;
             transform: translateY(-2px);
         }
 
         footer {
             position: fixed;
-            bottom: 15px; /* lebih ke bawah */
-            color: #558b2f;
+            bottom: 15px;
+            color: #0d47a1;
             font-size: 0.9rem;
             text-align: center;
             width: 100%;
@@ -142,7 +142,7 @@
 
             <p>Harga Tiket: <span class="price">Rp {{ number_format($harga, 0, ',', '.') }}</span></p>
 
-            <h5 class="mt-3 text-success">Fasilitas:</h5>
+            <h5 class="mt-3 text-primary">Fasilitas:</h5>
             <ul class="facilities">
                 @foreach ($fasilitas as $item)
                     <li>{{ $item }}</li>
@@ -154,7 +154,7 @@
     </div>
 
     <footer>
-        © 2025 Info Wisata Jember — Salsabila Zhafrany
+        © 2025 Info Wisata Jember — waizzz
     </footer>
 </body>
 </html>
